@@ -12,8 +12,8 @@ export default function Home() {
 
   return (
     <main style={{ fontFamily: "sans-serif", padding: 40 }}>
-      <h1>Alice & Bob's Wedding</h1>
-      <p>We're getting married on May 20, 2026 – and you're invited!</p>
+      <h1>Ellaine & Floyd's Wedding</h1>
+      <p>We're getting married on April 18, 2026 – and you're invited!</p>
 
       <h2>Add to Your Calendar</h2>
       <add-to-calendar-button
