@@ -1,0 +1,87 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.navLogo {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #2c2c2c;
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+.navMenu {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  align-items: center;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navMenu a:hover,
+.navMenu a.active {
+  color: #b4956f;
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mobileToggle {
+    display: block;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .navMenu.active {
+    display: flex;
+  }
+
+  .navMenu li {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+}
+
+

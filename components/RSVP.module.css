@@ -1,0 +1,173 @@
+.rsvpSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  scroll-margin-top: 80px;
+  position: relative;
+}
+
+.rsvpContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.rsvpContainer h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 0 0 1.5rem 0;
+  font-style: italic;
+}
+
+.rsvpContainer p {
+  font-size: 1.3rem;
+  margin: 0 0 3rem 0;
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.rsvpForm {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.formGroup input,
+.formGroup select {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.formGroup input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #b4956f;
+}
+
+.formGroup select option {
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1.2rem;
+  background: #b4956f;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+}
+
+.submitBtn:hover {
+  background: #a68860;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(180, 149, 111, 0.3);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 19999;
+}
+
+.confirmationModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 20000;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.confirmationModal h3 {
+  color: #2c2c2c;
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.confirmationModal p {
+  color: #666;
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.confirmationModal button {
+  background: #b4956f;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.confirmationModal button:hover {
+  background: #a68860;
+}
+
+@media (max-width: 768px) {
+  .rsvpContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .rsvpForm {
+    padding: 2rem;
+  }
+
+  .confirmationModal {
+    padding: 2rem;
+  }
+
+  .confirmationModal h3 {
+    font-size: 2rem;
+  }
+}
